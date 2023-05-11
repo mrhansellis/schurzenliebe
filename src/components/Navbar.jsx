@@ -1,14 +1,14 @@
-import React from 'react'
-
-import { useState } from "react";
+import React, { useState, useEffect } from 'react'
 import { navLinks } from '../constants';
 import { logo, menu, close } from "./../assets";
 
 const Navbar = () => {
 
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
+  
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
+    <div >
+    <nav className={`w-full flex py-6 justify-center items-center navbar`}>
       <img src={logo} alt="hedgehog logo" className="w-[124px] h-[114px]" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
@@ -48,8 +48,11 @@ const Navbar = () => {
 
 
       </div>
+      
 
     </nav>
+    </div>
+
   )
 }
 

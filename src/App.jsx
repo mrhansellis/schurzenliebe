@@ -1,21 +1,42 @@
-import { Navbar } from "./components";
+import { Navbar, Hero } from "./components";
+import React, {useState, useEffect } from "react";
 import styles from "./style"
 
-const App = () => (
+const App = () => {
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        if (scrollPosition > 545) {
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+      window.addEventListener("scroll", handleScroll);
+
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
     <div className="bg-primay w-full overflow-hidden">
-      <div className={`bg-blue-gradient ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={` ${styles.boxWidth}`}>
+      <div className={`bg-blue-gradient ${styles.paddingX} ${styles.flexCenter} ${isSticky ?  "fixed top-0 shadow-lg bg-blue-gradient opacity-50 w-full"  : " "}`}>
+        <div className={`${styles.boxWidth} `}>
           <Navbar />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          Hero
+          <Hero />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           The Aprons
           <br />
@@ -33,5 +54,5 @@ const App = () => (
       </div>
     </div>
   );
-
+}
 export default App
