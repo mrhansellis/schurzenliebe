@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { navLinks } from '../constants';
 import { logo, menu, close } from "./../assets";
 
@@ -7,9 +7,9 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   
   return (
-    <div >
+
     <nav className={`w-full flex py-6 justify-center items-center navbar`}>
-      <img src={logo} alt="hedgehog logo" className="w-[124px] h-[114px]" />
+      <img src={logo} alt="hedgehog logo" className="w-[124px] h-[114px]" href="#home" />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -32,14 +32,15 @@ const Navbar = () => {
       </div>
 
       <div
-      className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+      className={`${toggle ? 'flex' : 'hidden'} p-6 bg-blue-menu-gradient absolute top-20 right-0 mx-4 my-4 min-w-[140px] rounded-md sidebar`}>
         <ul className="list-none flex flex-col justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li
           key={nav.id}
           className={`font-poppins font-normal cursor-pointer text-[16px] ${index === navLinks.length -1 ? 'mr-0' : 'mb-4'}`}
           >
-            <a href={`#${nav.id}`}>
+            <a href={`#${nav.id}`}
+            onClick={() => setToggle((prev) => !prev)}>
               {nav.title}
             </a>
           </li>
@@ -51,7 +52,6 @@ const Navbar = () => {
       
 
     </nav>
-    </div>
 
   )
 }

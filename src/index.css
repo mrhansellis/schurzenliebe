@@ -50,12 +50,25 @@
   );
 }
 
-.bg-black-gradient {
+.bg-blue-gradient-opacity {
+  background: linear-gradient(
+    180deg,
+    rgb(52, 187, 250, 0.75) 0%,
+    rgb(102, 198, 242, 0.75) 0.36%,
+    rgb(123, 203, 240, 0.75) 10.23%,
+    rgb(179, 223, 244, 0.75) 42.04%,
+    rgb(217, 235, 244, 0.75) 55.12%,
+    rgb(246, 246, 246, 0.75) 68.54%
+  );
+}
+
+.bg-blue-menu-gradient {
   background: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #f6f5f8 91.61%
+    rgb(255, 255, 255, 0.5) -278.56%,
+    rgb(123, 203, 240, 0.5) -78.47%,
+    rgb(246, 245, 248, 0.5) 91.61%
+    
   );
 }
 
@@ -91,8 +104,8 @@
 
 @-webkit-keyframes slide-top {
   0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   100% {
     -webkit-transform: translateY(0);
@@ -102,8 +115,8 @@
 
 @keyframes slide-top {
   0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
   }
   100% {
     -webkit-transform: translateY(0);

@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        if (scrollPosition > 545) {
+        if (scrollPosition > 925) {
           setIsSticky(true);
         } else {
           setIsSticky(false);
@@ -23,8 +23,8 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-primay w-full overflow-hidden">
-      <div className={`bg-blue-gradient ${styles.paddingX} ${styles.flexCenter} ${isSticky ?  "fixed top-0 shadow-lg bg-blue-gradient opacity-50 w-full"  : " "}`}>
+    <div className="bg-primay w-full ">
+      <div className={`bg-blue-gradient ${styles.paddingX} ${styles.flexCenter} ${isSticky ?  "sticky top-0 shadow-lg bg-blue-gradient-opacity w-full z-10 sidebar" : " "}`}>
         <div className={`${styles.boxWidth} `}>
           <Navbar />
         </div>
@@ -33,6 +33,12 @@ const App = () => {
       <div className={`bg-primary ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Aprons />
         </div>
       </div>
 
