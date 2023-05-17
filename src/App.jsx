@@ -1,4 +1,4 @@
-import { Navbar, Hero } from "./components";
+import { Navbar, Hero, Aprons } from "./components";
 import React, {useState, useEffect } from "react";
 import styles from "./style"
 

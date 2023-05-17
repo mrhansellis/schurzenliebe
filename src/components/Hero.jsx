@@ -11,7 +11,6 @@ const Hero = () => (
           <h1 className="text-lg leading-2 text-gray-600">Handmade Crossback Aprons</h1>
         </div >
         <div className={`flex justify-center items-center sm:flex-row flex-col mx-auto py-6`}>
-
           <img 
           src={schurzhero} 
           alt="woman in kitchen wearing schurzenlibe apron"
@@ -21,7 +20,6 @@ const Hero = () => (
             WE LOVE APRONS A WHOLE HELL OF A LOT
           </h1>
         </div> 
-        
       </div>       
     </div>
   </section>
