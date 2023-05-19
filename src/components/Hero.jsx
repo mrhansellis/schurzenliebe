@@ -17,7 +17,7 @@ const Hero = () => (
           className="w-[500px]"
           />
           <h1 className="flex font-poppins font-semibold self-end text-greenText text-right ss:text-[75px] text-[52px] ss:leading-[85px] leading-[75px]">
-            WE LOVE APRONS A WHOLE HELL OF A LOT
+            FOR THE LOVE OF APRONS
           </h1>
         </div> 
       </div>       

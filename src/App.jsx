@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     const handleScroll = () => {
         const scrollPosition = window.scrollY;
-        if (scrollPosition > 925) {
+        if (scrollPosition > 722) {
           setIsSticky(true);
         } else {
           setIsSticky(false);
@@ -44,8 +44,6 @@ const App = () => {
 
       <div className={`bg-primary ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          The Aprons
-          <br />
           About
           <br />
           What users are saying.

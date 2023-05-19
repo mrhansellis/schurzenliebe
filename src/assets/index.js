@@ -5,6 +5,7 @@ import schurzscript from "./schurzscript.png";
 import schurzhero from "./schurzhero.png";
 import aprons from "./aprons.jpeg";
 import schurtzimage from "./schurtzimage.png";
+import aprondetail from "./aprondetail.jpeg";
 
 export {
   logo,
@@ -13,5 +14,6 @@ export {
   schurzscript,
   schurzhero,
   aprons,
-  schurtzimage
+  schurtzimage,
+  aprondetail
 }

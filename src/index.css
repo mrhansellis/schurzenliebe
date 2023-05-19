@@ -155,3 +155,7 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+.sunny_gradient {
+  background: radial-gradient(circle at center, rgba(251, 243, 1, 0.8) 0%, rgba(0, 0, 0, 0) 70%);
+}
