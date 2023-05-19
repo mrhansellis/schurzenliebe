@@ -16,11 +16,11 @@ const Aprons = () => {
           </div>
                    
           </div>
-            <div id="image" alt="detail of aprons displaying a range of colors and front pockets" className=" sm:order-last order-first sm:ml-10 relative hover:opacity-75 transition-opacity sm:mb-0 mb-6">
+            <div id="image" alt="detail of aprons displaying a range of colors and front pockets" className=" sm:order-last order-first sm:ml-10 relative sm:mb-0 mb-6">
               <a href="https://www.etsy.com/shop/Schurzenliebe" target="_blank"> 
               <img src={aprondetail}
               className=" w-full h-auto flex-grow" />
-              <div class="absolute inset-0 flex items-center justify-center text-white text-3xl opacity-0 hover:opacity-100 transition-opacity">
+              <div className="absolute inset-0 flex items-center justify-center text-white text-3xl bg-opacity-0 hover:bg-opacity-25 bg-slate-600 opacity-0 hover:opacity-100 transition-opacity transition-all">
                 Shop Aprons
               </div>
               </a> 
