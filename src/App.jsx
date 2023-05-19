@@ -1,4 +1,4 @@
-import { Navbar, Hero, Aprons } from "./components";
+import { Navbar, Hero, Aprons, Contact } from "./components";
 import React, {useState, useEffect } from "react";
 import styles from "./style"
 
@@ -39,6 +39,12 @@ const App = () => {
       <div className={`bg-primary ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Aprons />
+        </div>
+      </div>
+
+      <div className={`bg-primary ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Contact />
         </div>
       </div>
 
