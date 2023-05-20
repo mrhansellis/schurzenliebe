@@ -1,6 +1,7 @@
 import React from 'react';
 import { contacticon } from '../assets';
 import { contactLinks } from '../constants';
+import { IconContext } from 'react-icons';
 
 const Contact = () => {
   return (
@@ -15,6 +16,7 @@ const Contact = () => {
           </div>
         </div>
 
+      <IconContext.Provider value={{size: 30}}> 
         <div className="flex justify-evenly items-center w-32 h-16">
           
           {contactLinks.map((link) => (
@@ -29,6 +31,7 @@ const Contact = () => {
           ))}
           
         </div>
+      </IconContext.Provider> 
       </div>
     </section>
   )

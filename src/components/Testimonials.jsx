@@ -1,10 +1,10 @@
 import React from 'react'
-import { Carousel, Typography, Button } from "@material-tailwind/react";
+import { Carousel, Typography } from "@material-tailwind/react";
 import { cookinggirl, idris, camplady } from '../assets';
 
 const Testimonials = () => {
   return (
-    <Carousel transition={{duration: 2}} autoplay={true} autoplayDelay={8000} loop={true} className="py-16">
+    <Carousel transition={{duration: 2}} autoplay={true} autoplayDelay={8000} loop={true} className="py-16" id="testimonials">
       <div className="relative w-md w-full">
         <img
           src={cookinggirl}

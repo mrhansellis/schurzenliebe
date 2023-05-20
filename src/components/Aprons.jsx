@@ -1,6 +1,6 @@
 import styles from "../style"
 import React from 'react'
-import { aprondetail, schurtzimage } from "../assets";
+import { aprondetail } from "../assets";
 
 const Aprons = () => {
   return (
