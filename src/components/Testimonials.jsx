@@ -5,7 +5,7 @@ import { cookinggirl, idris, camplady } from '../assets';
 const Testimonials = () => {
   return (
     <Carousel transition={{duration: 2}} autoplay={true} autoplayDelay={8000} loop={true} className="py-16" id="testimonials">
-      <div className="relative w-md w-full">
+      <div className="relative w-full">
         <img
           src={cookinggirl}
           alt="young woman preparing food in an apron"

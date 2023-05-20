@@ -1,4 +1,4 @@
-import { Navbar, Hero, Aprons, Contact, Testimonials } from "./components";
+import { Navbar, Hero, Aprons, Contact, Testimonials, About } from "./components";
 import React, {useState, useEffect } from "react";
 import styles from "./style"
 
@@ -47,29 +47,19 @@ const App = () => {
           <Testimonials />
         </div>
       </div>
+      
+      <div className={`bg-primary ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
+          <About />
+        </div>
+      </div>
 
       <div className={`bg-primary ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Contact />
         </div>
       </div>
-
       
-
-      <div className={`bg-primary ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          About
-          <br />
-          What users are saying.
-          <br />
-          Locations
-          <br />
-          Contact
-          <br />
-          Make an apron!
-          <br />
-        </div>
-      </div>
     </div>
   );
 }

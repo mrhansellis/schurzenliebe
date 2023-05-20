@@ -10,6 +10,7 @@ import contacticon from "./contacticon.png";
 import cookinggirl from "./cookinggirl.png";
 import idris from "./idris.png";
 import camplady from "./camplady.png";
+import tina from "./tina.jpg";
 
 export {
   logo,
@@ -23,5 +24,6 @@ export {
   contacticon,
   cookinggirl,
   idris,
-  camplady
+  camplady,
+  tina
 }
