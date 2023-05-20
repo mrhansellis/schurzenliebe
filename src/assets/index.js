@@ -7,6 +7,9 @@ import aprons from "./aprons.jpeg";
 import schurtzimage from "./schurtzimage.png";
 import aprondetail from "./aprondetail.jpeg";
 import contacticon from "./contacticon.png";
+import cookinggirl from "./cookinggirl.png";
+import idris from "./idris.png";
+import camplady from "./camplady.png";
 
 export {
   logo,
@@ -17,5 +20,8 @@ export {
   aprons,
   schurtzimage,
   aprondetail,
-  contacticon
+  contacticon,
+  cookinggirl,
+  idris,
+  camplady
 }
