@@ -23,9 +23,9 @@ const About = () => {
           <img src={tina}
           onClick={openBio}
           className=" w-full h-auto flex-grow" />
-          {/* <div className="absolute inset-0 flex items-center justify-center text-white text-3xl bg-opacity-0 hover:bg-opacity-25 bg-black opacity-0 hover:opacity-100 transition-opacity transition-all">
+          <div className="absolute inset-0 flex items-center justify-center text-white text-3xl bg-opacity-0 hover:bg-opacity-25 bg-black opacity-0 hover:opacity-100 transition-opacity transition-all">
             View Bio
-          </div> */}
+          </div>
         </div>
 
         <div id="bio">
