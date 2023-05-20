@@ -20,7 +20,7 @@ const Aprons = () => {
               <a href="https://www.etsy.com/shop/Schurzenliebe" target="_blank"> 
               <img src={aprondetail}
               className=" w-full h-auto flex-grow" />
-              <div className="absolute inset-0 flex items-center justify-center text-white text-3xl bg-opacity-0 hover:bg-opacity-25 bg-blue-grey-600 opacity-0 hover:opacity-100 transition-opacity transition-all">
+              <div className="absolute inset-0 flex items-center justify-center text-white text-3xl bg-opacity-0 hover:bg-opacity-25 bg-black opacity-0 hover:opacity-100 transition-opacity transition-all">
                 Shop Aprons
               </div>
               </a> 
