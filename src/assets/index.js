@@ -11,6 +11,8 @@ import cookinggirl from "./cookinggirl.png";
 import idris from "./idris.png";
 import camplady from "./camplady.png";
 import tina from "./tina.jpg";
+import testimonial1 from "./testimonial1.png";
+import testimonial2 from "./testimonial2.png";
 
 export {
   logo,
@@ -25,5 +27,7 @@ export {
   cookinggirl,
   idris,
   camplady,
-  tina
+  tina,
+  testimonial1,
+  testimonial2
 }

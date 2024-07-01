@@ -1,13 +1,13 @@
 import React from 'react'
 import { Carousel, Typography } from "@material-tailwind/react";
-import { cookinggirl, idris, camplady } from '../assets';
+import { cookinggirl, idris, camplady, testimonial1, testimonial2, } from '../assets';
 
 const Testimonials = () => {
   return (
     <Carousel transition={{duration: 2}} autoplay={true} autoplayDelay={8000} loop={true} className="py-16" id="testimonials">
       <div className="relative w-full">
         <img
-          src={cookinggirl}
+          src={testimonial2}
           alt="young woman preparing food in an apron"
           className="h-full w-full object-cover"
         />
@@ -61,7 +61,7 @@ const Testimonials = () => {
       </div>
       <div className="relative h-full w-full">
         <img
-          src={camplady}
+          src={testimonial1}
           alt="image 3"
           className="h-full w-full object-cover"
         />
